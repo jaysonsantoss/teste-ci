@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Echo
-      run: touch /tmp/tt.txt
+      run: touch /tmp/tt-action.txt
