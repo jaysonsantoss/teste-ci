@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Echo
-      run: touch /tmp/tt-fernando.txt
+      run: sleep 60
