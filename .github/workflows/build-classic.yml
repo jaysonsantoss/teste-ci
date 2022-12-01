@@ -18,8 +18,8 @@ jobs:
 
     steps:
     - name: acessando projeto e dando o git pull na branch
-      uses: actions/checkout@v3
-      env:
+    - uses: actions/checkout@v3
+    - env:
         GITHUB_REF_NAME: $GITHUB_REF_NAME
       
       run: cd /home/jayson/Documentos/teste-ci/homolog/teste-ci && git pull >> /tmp/homolog/history-homolog.txt && echo $GITHUB_REF_NAME
