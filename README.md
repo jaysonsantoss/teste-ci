@@ -1,5 +1,5 @@
 # Calculadora de Gorjeta (B7Web)
-Calculadora de gorjetas desenvolvida em ReactJS.
+Calculadora de gorjetas desenvolvida em ReactJS..
 
 # Preview:
 <img src="https://media.discordapp.net/attachments/773453472158842900/824550644106264586/unknown.png" />
@@ -18,3 +18,4 @@ yarn
 ```
 npm start
 ```
+# testee
