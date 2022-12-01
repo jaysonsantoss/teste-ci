@@ -1,20 +1,23 @@
-name: Deploy
+---
+name: Build-CI
 
 on:
   push:
     branches:
-    - main
-    
+      - hotfix/*
+      - bugfix/*
+      - release/*
+      - feature/*
+
   workflow_dispatch:
+
 
 jobs:
   build:
 
     runs-on: self-hosted
-   
-    environment: production
+
     steps:
     - uses: actions/checkout@v3
-    - name: Echo
-      run: sleep 60
-
+    - name: acessando projeto e dando o git pull na master 
+      run: cd /home/jayson/Documentos/teste-ci/prod/teste-ci && git pull >> /tmp/prod/history-prod.txt
