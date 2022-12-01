@@ -1,7 +1,16 @@
-name: .NET
+---
+name: Build-CI
 
 on:
+  push:
+    branches:
+      - hotfix/*
+      - bugfix/*
+      - release/*
+      - feature/*
+
   workflow_dispatch:
+
 
 jobs:
   build:
