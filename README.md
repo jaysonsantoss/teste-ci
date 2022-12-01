@@ -18,4 +18,4 @@ yarn
 ```
 npm start
 ```
-#jay editouuu
+#jay editouuuo
