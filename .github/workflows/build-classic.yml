@@ -20,4 +20,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: acessando projeto e dando o git pull na branch 
-      run: cd /home/jayson/Documentos/teste-ci/homolog/teste-ci && git pull >> /tmp/hmg/history-homolog.txt
+      run: cd /home/jayson/Documentos/teste-ci/homolog/teste-ci && git pull >> /tmp/homolog/history-homolog.txt
