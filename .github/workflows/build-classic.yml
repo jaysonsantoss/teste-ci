@@ -14,8 +14,6 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    env:
-      GITHUB_REF_NAME: $GITHUB_REF_NAME 
 
     steps:
     - uses: actions/checkout@v3
