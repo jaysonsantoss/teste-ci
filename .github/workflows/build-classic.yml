@@ -13,13 +13,15 @@ on:
   
 jobs:
   build:
-
     runs-on: self-hosted
+    env:
+      GITHUB_REF_NAME: $GITHUB_REF_NAME 
 
     steps:
-    - name: acessando projeto e dando o git pull na branch
     - uses: actions/checkout@v3
-    - env:
-        GITHUB_REF_NAME: $GITHUB_REF_NAME
+
+    - name: acessando projeto e dando o git pull na branch
+      run: cd /home/jayson/Documentos/teste-ci/homolog/teste-ci && git pull >> /tmp/homolog/history-homolog.txt
       
-      run: cd /home/jayson/Documentos/teste-ci/homolog/teste-ci && git pull >> /tmp/homolog/history-homolog.txt && echo $GITHUB_REF_NAME
+    - name: Verificando se funciona a minha variavel
+      run: echo $GITHUB_REF_NAME
